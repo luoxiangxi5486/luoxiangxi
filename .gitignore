@@ -1,9 +1,27 @@
-# OS
+# ---------- 虚拟机磁盘镜像（体积过大，不纳入版本控制）----------
+# 本仓库仅保存虚拟机配置与快照元数据，磁盘镜像需另行备份
+*.vmdk
+*.vmem
+*.vswp
+*.vmss
+*.vmsd.tmp
+-flat.vmdk
+
+# 虚拟机运行期产生的锁文件与临时状态，不应入库
+*.lck/
+*.scoreboard
+*.vmx.lck
+
+# ---------- VMware 运行日志（含本机路径等信息，不入库）----------
+vmware.log
+vmware-*.log
+
+# ---------- 操作系统 ----------
 Thumbs.db
 Desktop.ini
 .DS_Store
 
-# Editors
+# ---------- 编辑器 ----------
 .vscode/
 .idea/
 *.swp
